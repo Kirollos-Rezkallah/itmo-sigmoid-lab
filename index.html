@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Сигмоид</title>
+  </head>
+  <body>
+    <h4>kiroo_rezkallah</h4>
+    <p>Результат вычисления находится в заголовке вкладки.</p>
+    <a href="?A=2,4,6,8,1&amp;B=1,-1,1,-1,1&amp;C=4">Открыть пример из задания</a>
+    <script type="module">
+      import { calculate, formatTitle } from './sigmoid.mjs';
+      if (location.search) document.title = formatTitle(calculate(location.search).y);
+    </script>
+  </body>
+</html>
